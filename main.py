@@ -22,7 +22,6 @@ def get_log(func):
         return result
     return foo
 
-
 def main(contact_list: list):
     new_list = list()
     for item in contact_list:
@@ -54,7 +53,6 @@ def generator(contacts: list):
             result_list.append(i)
 
     return result_list
-
 
 with open("phonebook.csv", "w", encoding="utf-8") as f:
     datawriter = csv.writer(f, delimiter=',')
